@@ -1,0 +1,45 @@
+.value{
+    &__wrapper{
+        display: grid;
+        gap: 20px;
+        place-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__card{
+        &__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__body{
+            text-align: center;
+        }
+        &__desc{
+            margin-top: 15px;
+            margin-bottom: 13px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        &__details{
+            line-height: 1.4;
+            color: #898;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width:620px) {
+    .value{
+        &__wrapper{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (max-width:440px) {
+    .value{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+
+    }
+}
